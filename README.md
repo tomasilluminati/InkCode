@@ -5,7 +5,7 @@
 ## Usage
 
 ```python
-from ink_text import ink_text
+from inkcode import ink_text
 
 text = "Hello, world!"
 color = "green"
