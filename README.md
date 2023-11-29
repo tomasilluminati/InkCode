@@ -1,6 +1,6 @@
 # InkCode - ANSI Text Colorizer and Formatter
 
-`ink_text` is a Python function that colorizes and formats text for ANSI-compatible terminals. It provides a simple way to enhance the appearance of text by adding color and formatting options.
+`InkCode` is a Python function that colorizes and formats text for ANSI-compatible terminals. It provides a simple way to enhance the appearance of text by adding color and formatting options.
 
 ## Usage
 
