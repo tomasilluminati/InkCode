@@ -1,39 +1,48 @@
-# INK CODE
+# ink_text - ANSI Text Colorizer and Formatter
 
-by Tomás Illuminati
-
-DEVELOPED IN PYTHON 3.11.0 64-bit
-ENCODING: UTF-8
-DATE: SEP 9 2023 
-
-This module provides a function for coloring and formatting text in ANSI-compatible terminals.
+`ink_text` is a Python function that colorizes and formats text for ANSI-compatible terminals. It provides a simple way to enhance the appearance of text by adding color and formatting options.
 
 ## Usage
 
-To colorize and format text, use the `ink_text` function. You can specify the text, color, and format.
+```python
+from ink_text import ink_text
 
-### Available colors:
+text = "Hello, world!"
+color = "green"
+format = "bold"
 
-- 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white'
-- 'new' (for bold)
-- 'reset' (to reset formatting)
+result = ink_text(text, color, format)
+print(result)
+```
 
-### Available formats:
+This example will print the text "Hello, world!" in bold green.
 
-- 'bold'
-- 'faint'
-- 'italic'
-- 'blink'
+## Parameters
 
-If the specified color or format is not valid, the function will return the text without modification.
+- `text` (str): The text to be colorized and formatted.
+- `color` (str): The desired text color. Available colors are black, red, green, yellow, blue, magenta, cyan, and white.
+- `format` (str, optional): The desired text format. Available formats are bold, faint, italic, underline, blink, reverse, crossed_out, double_underline, framed, encircled, overlined, and reset_all. Defaults to None.
 
-## Example
+## Return Value
+
+The function returns a string containing the colorized and formatted text.
+
+## Examples
 
 ```python
-# Ink text in red and make it bold
-colored_text = ink_text("Hello, world!", "red", "bold")
-print(colored_text)
+# Colorize text in red
+red_text = ink_text("Error!", "red")
+print(red_text)
 
-# Ink text in green
-green_text = ink_text("Success!", "green")
-print(green_text)
+# Format text with underline and color it blue
+blue_underline_text = ink_text("Important", "blue", "underline")
+print(blue_underline_text)
+```
+
+## Notes
+
+- This function uses ANSI escape codes to apply color and formatting. It may not work properly in environments that do not support ANSI escape codes.
+
+Feel free to use and modify this function to suit your needs. If you encounter any issues or have suggestions for improvement, please let us know.
+
+**Note**: Make sure to handle exceptions appropriately when using this function to prevent unexpected behavior.
