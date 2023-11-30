@@ -34,8 +34,7 @@ The function returns a string containing the colorized and formatted text.
 red_text = ink_text("Error!", "red")
 print(red_text)
 
-# Colorize text in red another way
-red_text = ink_text("Error!", "red")
+# Colorize text in red another way and format with bold
 print(ink_text("Error!", "red", "bold"))
 
 # Format text with underline and color it blue
