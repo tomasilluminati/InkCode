@@ -1,4 +1,12 @@
 # InkCode - ANSI Text Colorizer and Formatter
+![License](https://img.shields.io/badge/license-MIT-red.svg)
+![Version](https://img.shields.io/badge/version-1.0-brightgreen)
+![Python Version](https://img.shields.io/badge/python-3.11-blue)
+
+![logo](https://github.com/tomasilluminati/InkCode/blob/main/logo/ink_code_logo.png)
+
+
+## Description
 
 `InkCode` is a Python function that colorizes and formats text for ANSI-compatible terminals. It provides a simple way to enhance the appearance of text by adding color and formatting options.
 
